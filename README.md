@@ -40,10 +40,12 @@ Project Documentation
 For Software:
 
 Screenshots (Add at least 3)
-<img width="1806" height="993" alt="Screenshot 2026-09-12 051501" src="https://github.com/user-attachments/assets/f2cefa7c-f75c-4f1e-94e5-9fb05636e770" />
+<img width="1791" height="1007" alt="image" src="https://github.com/user-attachments/assets/23982a6b-46c7-4ae8-967d-3b2955b39d7f" />
+
 in this screen shot were in the page instagram ,if we turn on the chrome extension thumb mileage tracker we can track the scroll movements in page also we can convert that data to average scroll lenght.
 
-![Screenshot2]<img width="1832" height="1015" alt="Screenshot 2026-09-12 051548" src="https://github.com/user-attachments/assets/907ca0b7-7031-4548-b955-e6f01c0b0ad3" />  in this image we got some distance by doomscrolling ,if we press the dashboard we will enter the new webapp.that can track your scroll thumb distance moved in total ,how much calaries burned,dashboard.
+![Screenshot2]<img width="612" height="370" alt="Screenshot 2026-09-12 032445" src="https://github.com/user-attachments/assets/9af8bbe1-8237-4581-a86f-68b788fabf18" />
+  in this image we got some distance by doomscrolling ,if we press the dashboard we will enter the new webapp.that can track your scroll thumb distance moved in total ,how much calaries burned,dashboard.
 
 ![Screenshot3]  <img width="1566" height="953" alt="Screenshot 2026-09-12 051410" src="https://github.com/user-attachments/assets/f340c26d-3b20-4c4b-9178-987c33e34d02" />
 this is the interface of app you can actually track your pace of doomscrolling
