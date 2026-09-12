@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marathon Doomscroller</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <h1>Marathon Doomscroller</h1>
+          <p>Instagram web + YouTube Shorts web</p>
+        </div>
+      </header>
+
+      <section class="stat primary">
+        <span>Today</span>
+        <strong id="todayDistance">0 cm</strong>
+      </section>
+
+      <section class="grid">
+        <div class="stat">
+          <span>This week</span>
+          <strong id="weekDistance">0 cm</strong>
+        </div>
+        <div class="stat">
+          <span>Lifetime</span>
+          <strong id="lifetimeDistance">0 cm</strong>
+        </div>
+        <div class="stat">
+          <span>Calories</span>
+          <strong id="calories">0.00 kcal</strong>
+        </div>
+        <div class="stat">
+          <span>Achievement</span>
+          <strong id="achievement">Rookie</strong>
+        </div>
+      </section>
+
+      <section class="connection">
+        <span>Dashboard</span>
+        <strong id="dashboardStatus">Checking...</strong>
+      </section>
+
+      <p id="actionStatus" class="action-status">Open Instagram or YouTube Shorts, then start tracking.</p>
+      <button id="startButton" class="start" type="button">Start tracking this tab</button>
+      <button id="dashboardButton" class="secondary" type="button">Open dashboard</button>
+      <button id="testButton" class="secondary" type="button">Test upload</button>
+      <button id="resetButton" type="button">Reset mileage</button>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

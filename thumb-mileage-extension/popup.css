@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  background: #f4f7fb;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 55% 60%, #14b8a6 0 17%, transparent 18%),
+    linear-gradient(135deg, #14213d, #0f9f6e);
+  box-shadow: 0 10px 24px rgba(31, 41, 55, 0.14);
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.connection {
+  min-height: 48px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  background: #eff6ff;
+}
+
+.connection span {
+  display: block;
+  color: #1d4ed8;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.connection strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.connection.offline {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.connection.offline span {
+  color: #b91c1c;
+}
+
+.action-status {
+  min-height: 32px;
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.stat {
+  min-height: 72px;
+  padding: 12px;
+  border: 1px solid #d7dee9;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(31, 41, 55, 0.05);
+}
+
+.stat.primary {
+  min-height: 92px;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #14213d, #0f9f6e);
+  color: #ffffff;
+}
+
+.stat span {
+  display: block;
+  margin-bottom: 8px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.stat.primary span {
+  color: #cbd5e1;
+}
+
+.stat strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1.15;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+}
+
+.stat.primary strong {
+  font-size: 34px;
+}
+
+button {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #dc2626;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b91c1c;
+}
+
+button.start {
+  background: #0f9f6e;
+}
+
+button.start:hover {
+  background: #0f766e;
+}
+
+button.secondary {
+  background: #2563eb;
+}
+
+button.secondary:hover {
+  background: #1e40af;
+}
