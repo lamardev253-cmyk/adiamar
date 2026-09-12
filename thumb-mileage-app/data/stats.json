@@ -1,0 +1,15 @@
+{
+  "daily": {
+    "2026-09-12": {
+      "events": 82,
+      "meters": 0.27552,
+      "scrollPixels": 3444,
+      "sites": {
+        "Instagram": 0.27552
+      },
+      "thumbPixels": 0
+    }
+  },
+  "lifetimeMeters": 0.27552,
+  "updatedAt": 1789180876572
+}

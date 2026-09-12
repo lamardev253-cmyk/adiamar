@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marathon Doomscroller</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Realtime dashboard</p>
+          <h1>Marathon Doomscroller</h1>
+        </div>
+        <span id="status" class="status">Connecting</span>
+      </header>
+
+      <section class="hero" aria-labelledby="today-title">
+        <div class="hero-copy">
+          <p id="today-title">Today's thumb distance</p>
+          <strong id="todayDistance">0 cm</strong>
+          <span id="comparison">Start scrolling Instagram web or YouTube Shorts web.</span>
+        </div>
+        <div class="hero-mark" aria-hidden="true">
+          <img src="/thumbmark.svg" alt="">
+        </div>
+      </section>
+
+      <section class="stat-grid" aria-label="Live stats">
+        <article class="stat-card blue">
+          <span>This week</span>
+          <strong id="weekDistance">0 cm</strong>
+        </article>
+        <article class="stat-card green">
+          <span>Lifetime</span>
+          <strong id="lifetimeDistance">0 cm</strong>
+        </article>
+        <article class="stat-card amber">
+          <span>Swipe events</span>
+          <strong id="todayEvents">0</strong>
+        </article>
+        <article class="stat-card red">
+          <span>Calories</span>
+          <strong id="calories">0.00 kcal</strong>
+        </article>
+      </section>
+
+      <section class="milestone-card">
+        <div>
+          <p class="eyebrow red-text">Current milestone</p>
+          <h2 id="achievement">Rookie</h2>
+          <span id="nextGoal">10,000 cm to Scroll Rookie</span>
+        </div>
+        <div class="progress-track">
+          <div id="milestoneFill" class="progress-fill"></div>
+        </div>
+      </section>
+
+      <section class="certificate">
+        <div class="certificate-copy">
+          <p class="eyebrow red-text">Certificate of scrolling</p>
+          <h2 id="certificateTitle">Certified Rookie</h2>
+          <p id="certificateBody">This certifies that your thumb has entered the scrolling arena.</p>
+          <div class="pill-row">
+            <span id="certificateDistance">0 cm logged</span>
+            <span id="certificateDate">Issued today</span>
+          </div>
+        </div>
+        <div class="certificate-seal" aria-hidden="true">
+          <span id="certificateInitial">R</span>
+        </div>
+      </section>
+
+      <section class="achievement-vault" aria-labelledby="achievement-vault-title">
+        <div class="panel-title">
+          <div>
+            <p class="eyebrow purple-text">Achievement tab</p>
+            <h2 id="achievement-vault-title">Certificate Vault</h2>
+            <p class="panel-note">Locked certificates unlock as your thumb distance grows.</p>
+          </div>
+          <span id="achievementVaultSummary">0 unlocked</span>
+        </div>
+
+        <div class="achievement-tabs" role="tablist" aria-label="Certificate filters">
+          <button class="tab-button active" type="button" role="tab" aria-selected="true" data-achievement-filter="all">All</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-achievement-filter="unlocked">Unlocked</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-achievement-filter="locked">Locked</button>
+        </div>
+
+        <div id="achievementVault" class="certificate-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="marathon-card">
+        <div class="panel-title">
+          <div>
+            <p class="eyebrow purple-text">Fun running mode</p>
+            <h2>Thumb Marathon Pace</h2>
+          </div>
+          <span id="marathonRemaining">42.20 km left</span>
+        </div>
+
+        <div class="lap-meter">
+          <div>
+            <span>Current lap</span>
+            <strong id="lapDistance">0 cm / 10,000 cm</strong>
+          </div>
+          <div class="progress-track">
+            <div id="lapFill" class="progress-fill race-fill"></div>
+          </div>
+        </div>
+
+        <div class="marathon-grid">
+          <div>
+            <span>Pace</span>
+            <strong id="pacePerKm">Waiting for scrolls</strong>
+          </div>
+          <div>
+            <span>Marathon ETA</span>
+            <strong id="marathonEta">No pace yet</strong>
+          </div>
+          <div>
+            <span>10 km badge</span>
+            <strong id="marathonProgress">0 cm / 10 km</strong>
+            <div class="mini-track"><div id="marathonFill"></div></div>
+          </div>
+          <div>
+            <span>Legendary run</span>
+            <strong>100 km lifetime</strong>
+            <div class="mini-track"><div id="legendaryFill"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>Sites</h2>
+              <p class="panel-note">Today by source</p>
+            </div>
+            <span id="updatedAt">No data yet</span>
+          </div>
+          <div id="sites" class="site-list"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>Last 7 Days</h2>
+              <p class="panel-note">Thumb distance per day</p>
+            </div>
+            <span id="topSite">No top site</span>
+          </div>
+          <div id="chart" class="chart"></div>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>Quick Analytics</h2>
+              <p class="panel-note">Live estimated behavior</p>
+            </div>
+            <span id="analyticsToday">0 cm</span>
+          </div>
+          <div class="detail-grid">
+            <div><span>Time spent</span><strong id="timeSpent">0h 0m</strong></div>
+            <div><span>Thumb speed</span><strong id="thumbSpeed">0.0 cm/min</strong></div>
+            <div><span>Avg speed</span><strong id="avgSpeed">0.0 cm/min</strong></div>
+            <div><span>Reels watched</span><strong id="reelsWatched">0</strong></div>
+          </div>
+          <p id="factText" class="fact">Your thumb is waiting for its first ridiculous stat.</p>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title">
+            <div>
+              <h2>Profile</h2>
+              <p class="panel-note">All-time bragging rights</p>
+            </div>
+            <span id="profileBadges">1</span>
+          </div>
+          <div class="detail-list">
+            <div><span>Total Distance</span><strong id="profileLifetime">0 cm</strong></div>
+            <div><span>This Week</span><strong id="profileWeek">0 cm</strong></div>
+            <div><span>Leaderboard</span><strong id="leaderboardYou">0 cm</strong></div>
+            <div><span>Total Distance</span><strong id="allTimeDistance">0 cm</strong></div>
+            <div><span>Today's Scrolls</span><strong id="profileEvents">0</strong></div>
+            <div><span>Total Scrolls</span><strong id="allTimeScrolls">0</strong></div>
+            <div><span>Calories Burned</span><strong id="allTimeCalories">0.00 kcal</strong></div>
+          </div>
+          <button id="resetButton" type="button">Reset Mileage</button>
+        </article>
+      </section>
+
+      <section class="goal-strip" aria-label="Daily goal">
+        <span>Daily goal: 3,500 cm</span>
+        <div class="mini-track"><div id="dailyGoalFill"></div></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
