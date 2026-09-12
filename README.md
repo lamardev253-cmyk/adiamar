@@ -45,28 +45,20 @@ in this screen shot were in the page instagram ,if we turn on the chrome extensi
 
 ![Screenshot2]<img width="1832" height="1015" alt="Screenshot 2026-09-12 051548" src="https://github.com/user-attachments/assets/907ca0b7-7031-4548-b955-e6f01c0b0ad3" />  in this image we got some distance by doomscrolling ,if we press the dashboard we will enter the new webapp.that can track your scroll thumb distance moved in total ,how much calaries burned,dashboard.
 
-![Screenshot3]<img width="1683" height="1021" alt="Screenshot 2026-09-12 051608" src="https://github.com/user-attachments/assets/535bdc95-f0df-4522-b46b-6369cf068e8f" />   
+![Screenshot3]  <img width="1566" height="953" alt="Screenshot 2026-09-12 051410" src="https://github.com/user-attachments/assets/f340c26d-3b20-4c4b-9178-987c33e34d02" />
+this is the interface of app you can actually track your pace of doomscrolling
+
 
 Diagrams
 <img width="1408" height="768" alt="Gemini_Generated_Image_6apv026apv026apv" src="https://github.com/user-attachments/assets/9315c4b9-1819-4a29-9047-ad5001bd5c1b" />
 
 For Hardware:
 
-Schematic & Circuit
-![Circuit](Add your circuit diagram here) Add caption explaining connections
 
-![Schematic](Add your schematic diagram here) Add caption explaining the schematic
-
-Build Photos
-![Components](Add photo of your components here) List out all components shown
-
-![Build](Add photos of build process here) Explain the build steps
-
-![Final](Add photo of final product here) Explain the final build
 
 Project Demo
 Video
-https://drive.google.com/file/d/1wznt0nFdhIysI2YRQzrhynckIdFkT-8j/view?usp=drive_link
+<img width="1566" height="953" alt="Screenshot 2026-09-12 051410" src="https://github.com/user-attachments/assets/c3046532-c1dd-4745-9d37-18008cce7838" />
 
 
 Additional Demos
